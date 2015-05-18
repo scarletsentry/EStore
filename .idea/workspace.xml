@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74cd1062-c3f8-4960-b41f-5ad372112577" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Main/migrations/0001_initial.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Fayt\PycharmProjects\EStore\Main\migrations\0002_auto_20150516_1004.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Fayt\PycharmProjects\EStore\Main\migrations\0003_auto_20150516_1007.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Fayt\PycharmProjects\EStore\Main\migrations\0004_auto_20150516_1008.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Fayt\PycharmProjects\EStore\Main\migrations\0005_auto_20150517_0825.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Fayt\PycharmProjects\EStore\Main\migrations\0006_auto_20150517_0909.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Fayt\PycharmProjects\EStore\Main\migrations\0007_invoice_isfinalized.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Fayt\PycharmProjects\EStore\Main\migrations\0008_auto_20150517_1309.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Fayt\PycharmProjects\EStore\Main\migrations\0009_auto_20150518_0921.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/invoice_details.html" afterPath="$PROJECT_DIR$/templates/invoice_details.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Main/models.py" afterPath="$PROJECT_DIR$/Main/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/remove_product.html" afterPath="$PROJECT_DIR$/templates/remove_product.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EStore/settings.py" afterPath="$PROJECT_DIR$/EStore/settings.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="EStore.iws" />
@@ -46,10 +36,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/EStore/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="85" column="17" selection-start="2137" selection-end="2155" vertical-scroll-proportion="0.0" vertical-offset="882" max-vertical-offset="1819">
+            <state line="71" column="1" selection-start="1964" selection-end="1964" vertical-scroll-proportion="0.34685165" vertical-offset="882" max-vertical-offset="1870">
               <folding />
             </state>
           </provider>
@@ -73,10 +63,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="remove_product.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="remove_product.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/remove_product.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="261" column="42" selection-start="9298" selection-end="9298" vertical-scroll-proportion="1.1161616" vertical-offset="3774" max-vertical-offset="5678">
+            <state line="261" column="42" selection-start="9298" selection-end="9298" vertical-scroll-proportion="-25.5" vertical-offset="3774" max-vertical-offset="5678">
               <folding />
             </state>
           </provider>
@@ -135,10 +125,10 @@
         <option value="$PROJECT_DIR$/EStore/urls.py" />
         <option value="$PROJECT_DIR$/Main/views.py" />
         <option value="$PROJECT_DIR$/templates/index.html" />
-        <option value="$PROJECT_DIR$/EStore/settings.py" />
         <option value="$PROJECT_DIR$/Main/models.py" />
         <option value="$PROJECT_DIR$/templates/invoice_details.html" />
         <option value="$PROJECT_DIR$/templates/remove_product.html" />
+        <option value="$PROJECT_DIR$/EStore/settings.py" />
       </list>
     </option>
   </component>
@@ -557,13 +547,18 @@
       <created>1431671066119</created>
       <updated>1431671066119</updated>
     </task>
+    <task id="LOCAL-00001" summary="Remove Product: minus sign fix&#10;Invoice Details: manufacturer added">
+      <created>1431965432114</created>
+      <updated>1431965432114</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32917964" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917964" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917964" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -672,13 +667,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EStore/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="17" selection-start="2137" selection-end="2155" vertical-scroll-proportion="0.0" vertical-offset="882" max-vertical-offset="1819">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Main/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="74" column="16" selection-start="2189" selection-end="2201" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="2414">
@@ -695,7 +683,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/remove_product.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="261" column="42" selection-start="9298" selection-end="9298" vertical-scroll-proportion="1.1161616" vertical-offset="3774" max-vertical-offset="5678">
+        <state line="261" column="42" selection-start="9298" selection-end="9298" vertical-scroll-proportion="-25.5" vertical-offset="3774" max-vertical-offset="5678">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EStore/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="1" selection-start="1964" selection-end="1964" vertical-scroll-proportion="0.34685165" vertical-offset="882" max-vertical-offset="1870">
           <folding />
         </state>
       </provider>
