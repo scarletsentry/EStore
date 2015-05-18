@@ -306,8 +306,8 @@
                                                         <thead>
                                                             <tr>
                                                                 <th class="center">#</th>
-                                                                <th>Product</th>
-                                                                <th class="hidden-xs">Category</th>
+                                                                <th colspan="2">Product</th>
+                                                                <th class="hidden-xs" >Category</th>
                                                                 <th>Total</th>
                                                             </tr>
                                                         </thead>
@@ -316,8 +316,9 @@
                                                         {% for pi in p %}
                                                             <tr>
                                                                 <td>{{ pi.quantity }}</td>
+                                                                <td>{{ pi.product.manufacturer }}</td>
                                                                 <td>{{ pi.product.name }}</td>
-                                                                <td>{{ pi.product.category }}</td>
+                                                                <td class="hidden-xs" >{{ pi.product.category }}</td>
                                                                 <td>{{ pi.price }}</td>
                                                             </tr>
                                                         {% endfor %}

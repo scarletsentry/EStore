@@ -12,7 +12,7 @@ class Store(models.Model):
 
 
 class Employee(models.Model):
-    user = models.OneToOneField(User)
+    user = models.ForeignKey(User)
     address = models.TextField()
     phoneNumber = models.CharField(max_length=50)
     department = models.CharField(max_length=50)
@@ -95,7 +95,7 @@ class Purchase(models.Model):
     product = models.ForeignKey(Product)
     quantity = models.IntegerField()
     invoice = models.ForeignKey(Invoice)
-    price = models.FloatField(default=0.0)
+    price = models.FloatField(default=-1.0)
 
     def __str__(self):
         return str(self.id)

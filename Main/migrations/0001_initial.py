@@ -2,11 +2,13 @@
 from __future__ import unicode_literals
 
 from django.db import models, migrations
+from django.conf import settings
 
 
 class Migration(migrations.Migration):
 
     dependencies = [
+        migrations.swappable_dependency(settings.AUTH_USER_MODEL),
     ]
 
     operations = [
@@ -14,11 +16,13 @@ class Migration(migrations.Migration):
             name='Customer',
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
-                ('name', models.CharField(max_length=100)),
+                ('ssno', models.CharField(unique=True, max_length=100, blank=True)),
+                ('first_name', models.CharField(max_length=100, blank=True)),
+                ('last_name', models.CharField(max_length=100, blank=True)),
                 ('email', models.CharField(max_length=255)),
                 ('address', models.TextField()),
                 ('phoneNumber', models.CharField(max_length=50)),
-                ('storeCredit', models.IntegerField()),
+                ('storeCredit', models.FloatField()),
             ],
             options={
             },
@@ -28,14 +32,13 @@ class Migration(migrations.Migration):
             name='Employee',
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
-                ('name', models.CharField(max_length=100)),
-                ('email', models.CharField(max_length=255)),
                 ('address', models.TextField()),
                 ('phoneNumber', models.CharField(max_length=50)),
                 ('department', models.CharField(max_length=50)),
                 ('salary', models.IntegerField()),
                 ('title', models.CharField(max_length=50)),
                 ('accessLevel', models.IntegerField()),
+                ('user', models.ForeignKey(to=settings.AUTH_USER_MODEL)),
             ],
             options={
             },
@@ -46,7 +49,9 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
                 ('date', models.DateTimeField(auto_now=True)),
+                ('isFinalized', models.BooleanField(default=False)),
                 ('totalPrice', models.FloatField()),
+                ('customer', models.ForeignKey(to='Main.Customer')),
             ],
             options={
             },
@@ -57,9 +62,9 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
                 ('name', models.CharField(max_length=100)),
-                ('logo', models.CharField(max_length=255)),
-                ('info', models.TextField()),
-                ('contactInfo', models.TextField()),
+                ('logo', models.CharField(max_length=255, null=True, blank=True)),
+                ('info', models.TextField(null=True, blank=True)),
+                ('contactInfo', models.TextField(null=True, blank=True)),
             ],
             options={
             },
@@ -85,7 +90,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
                 ('quantity', models.IntegerField()),
-                ('customer', models.ForeignKey(to='Main.Customer')),
+                ('price', models.FloatField(default=-1.0)),
                 ('invoice', models.ForeignKey(to='Main.Invoice')),
                 ('product', models.ForeignKey(to='Main.Product')),
             ],
@@ -99,7 +104,6 @@ class Migration(migrations.Migration):
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
                 ('quantity', models.IntegerField()),
                 ('reason', models.TextField()),
-                ('customer', models.ForeignKey(to='Main.Customer')),
                 ('invoice', models.ForeignKey(to='Main.Invoice')),
                 ('product', models.ForeignKey(to='Main.Product')),
             ],
@@ -112,8 +116,8 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
                 ('name', models.CharField(max_length=100)),
-                ('contactInfo', models.TextField()),
-                ('address', models.TextField()),
+                ('contactInfo', models.TextField(null=True, blank=True)),
+                ('address', models.TextField(null=True, blank=True)),
             ],
             options={
             },
@@ -159,8 +163,8 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
                 ('name', models.CharField(max_length=100)),
-                ('contactInfo', models.TextField()),
-                ('address', models.TextField()),
+                ('contactInfo', models.TextField(null=True, blank=True)),
+                ('address', models.TextField(null=True, blank=True)),
             ],
             options={
             },
@@ -168,8 +172,8 @@ class Migration(migrations.Migration):
         ),
         migrations.AddField(
             model_name='stock',
-            name='supplier',
-            field=models.ForeignKey(to='Main.Supplier'),
+            name='store',
+            field=models.ForeignKey(to='Main.Store'),
             preserve_default=True,
         ),
         migrations.AddField(
@@ -194,6 +198,12 @@ class Migration(migrations.Migration):
             model_name='product',
             name='supplier',
             field=models.ForeignKey(to='Main.Supplier'),
+            preserve_default=True,
+        ),
+        migrations.AddField(
+            model_name='invoice',
+            name='store',
+            field=models.ForeignKey(to='Main.Store'),
             preserve_default=True,
         ),
         migrations.AddField(

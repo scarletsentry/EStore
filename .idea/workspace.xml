@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="74cd1062-c3f8-4960-b41f-5ad372112577" name="Default" comment="" />
+    <list default="true" id="74cd1062-c3f8-4960-b41f-5ad372112577" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Main/migrations/0001_initial.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Fayt\PycharmProjects\EStore\Main\migrations\0002_auto_20150516_1004.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Fayt\PycharmProjects\EStore\Main\migrations\0003_auto_20150516_1007.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Fayt\PycharmProjects\EStore\Main\migrations\0004_auto_20150516_1008.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Fayt\PycharmProjects\EStore\Main\migrations\0005_auto_20150517_0825.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Fayt\PycharmProjects\EStore\Main\migrations\0006_auto_20150517_0909.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Fayt\PycharmProjects\EStore\Main\migrations\0007_invoice_isfinalized.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Fayt\PycharmProjects\EStore\Main\migrations\0008_auto_20150517_1309.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Fayt\PycharmProjects\EStore\Main\migrations\0009_auto_20150518_0921.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/invoice_details.html" afterPath="$PROJECT_DIR$/templates/invoice_details.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Main/models.py" afterPath="$PROJECT_DIR$/Main/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/remove_product.html" afterPath="$PROJECT_DIR$/templates/remove_product.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="EStore.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,10 +46,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EStore/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="0" selection-start="2156" selection-end="2156" vertical-scroll-proportion="0.9339775" vertical-offset="882" max-vertical-offset="1819">
+            <state line="85" column="17" selection-start="2137" selection-end="2155" vertical-scroll-proportion="0.0" vertical-offset="882" max-vertical-offset="1819">
               <folding />
             </state>
           </provider>
@@ -44,7 +58,25 @@
       <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Main/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="44" selection-start="700" selection-end="700" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="2431">
+            <state line="74" column="16" selection-start="2189" selection-end="2201" vertical-scroll-proportion="0.0" vertical-offset="1258" max-vertical-offset="2431">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="invoice_details.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/invoice_details.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="320" column="70" selection-start="14338" selection-end="14338" vertical-scroll-proportion="0.0" vertical-offset="5100" max-vertical-offset="7769">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="remove_product.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/remove_product.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="261" column="42" selection-start="9298" selection-end="9298" vertical-scroll-proportion="1.1161616" vertical-offset="3774" max-vertical-offset="5678">
               <folding />
             </state>
           </provider>
@@ -76,6 +108,11 @@
     </FindUsagesManager>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="ScarletSentry" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitLogSettings">
@@ -89,19 +126,19 @@
         <option value="$PROJECT_DIR$/templates/products.html" />
         <option value="$PROJECT_DIR$/templates/recieve_shipment.html" />
         <option value="$PROJECT_DIR$/templates/recieve_shipment2.html" />
-        <option value="$PROJECT_DIR$/templates/remove_product.html" />
         <option value="$PROJECT_DIR$/templates/new_invoice.html" />
         <option value="$PROJECT_DIR$/templates/invoices.html" />
-        <option value="$PROJECT_DIR$/templates/invoice_details.html" />
         <option value="$PROJECT_DIR$/templates/customer_details.html" />
         <option value="$PROJECT_DIR$/templates/customers.html" />
         <option value="$PROJECT_DIR$/Main/admin.py" />
         <option value="$PROJECT_DIR$/templates/login.html" />
         <option value="$PROJECT_DIR$/EStore/urls.py" />
         <option value="$PROJECT_DIR$/Main/views.py" />
-        <option value="$PROJECT_DIR$/Main/models.py" />
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/EStore/settings.py" />
+        <option value="$PROJECT_DIR$/Main/models.py" />
+        <option value="$PROJECT_DIR$/templates/invoice_details.html" />
+        <option value="$PROJECT_DIR$/templates/remove_product.html" />
       </list>
     </option>
   </component>
@@ -153,7 +190,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -210,11 +246,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="html" />
+              <option name="myItemId" value="Main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -229,6 +261,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrations" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -248,18 +284,19 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
+    <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="PublishConfig" serverName="Waterdeep" serverId="ef71c626-4f55-4054-ac42-d5d2f99cd7cc">
     <servers>
@@ -371,7 +408,27 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="EStore" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
@@ -397,27 +454,7 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="EStore" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <option name="port" value="8000" />
-      <option name="host" value="" />
-      <option name="additionalOptions" value="" />
-      <option name="browserUrl" value="" />
-      <option name="runTestServer" value="false" />
-      <option name="runNoReload" value="false" />
-      <option name="useCustomRunCommand" value="false" />
-      <option name="customRunCommand" value="" />
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -524,18 +561,19 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32917964" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917964" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22291666" sideWeight="0.6718588" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22291666" sideWeight="0.67082036" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3281412" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3281412" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -553,6 +591,8 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="Remove Product: minus sign fix&#10;Invoice Details: manufacturer added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove Product: minus sign fix&#10;Invoice Details: manufacturer added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -566,11 +606,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/new_product.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="31" selection-start="3121" selection-end="3121" vertical-scroll-proportion="0.25757575" vertical-offset="1445" max-vertical-offset="6001" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/recieve_shipment.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="101" column="31" selection-start="3695" selection-end="3695" vertical-scroll-proportion="0.17003366" vertical-offset="1616" max-vertical-offset="5610" />
@@ -579,11 +614,6 @@
     <entry file="file://$PROJECT_DIR$/templates/recieve_shipment2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="109" column="43" selection-start="3916" selection-end="3916" vertical-scroll-proportion="0.5151515" vertical-offset="1547" max-vertical-offset="5916" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/remove_product.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="31" selection-start="3695" selection-end="3695" vertical-scroll-proportion="0.57239056" vertical-offset="1377" max-vertical-offset="5678" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/products.html">
@@ -628,13 +658,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Main/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="44" selection-start="700" selection-end="700" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2414">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/html/top-menu.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="321" column="94" selection-start="10504" selection-end="10504" vertical-scroll-proportion="0.0" vertical-offset="4998" max-vertical-offset="20281">
@@ -651,7 +674,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/EStore/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="0" selection-start="2156" selection-end="2156" vertical-scroll-proportion="0.9339775" vertical-offset="882" max-vertical-offset="1819">
+        <state line="85" column="17" selection-start="2137" selection-end="2155" vertical-scroll-proportion="0.0" vertical-offset="882" max-vertical-offset="1819">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="16" selection-start="2189" selection-end="2201" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="2414">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/invoice_details.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="320" column="70" selection-start="14338" selection-end="14338" vertical-scroll-proportion="0.0" vertical-offset="5100" max-vertical-offset="7769">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/remove_product.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="261" column="42" selection-start="9298" selection-end="9298" vertical-scroll-proportion="1.1161616" vertical-offset="3774" max-vertical-offset="5678">
           <folding />
         </state>
       </provider>
