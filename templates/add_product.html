@@ -1,0 +1,328 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta charset="utf-8" />
+		<title>Dashboard - EStore</title>
+
+		<meta name="description" content="top menu &amp; navigation" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+		<!-- bootstrap & fontawesome -->
+		<link rel="stylesheet" href="{% static "assets/css/bootstrap.min.css" %}" />
+		<link rel="stylesheet" href="{% static "assets/css/font-awesome.min.css" %}" />
+
+		<!-- page specific plugin styles -->
+        <link rel="stylesheet" href="{% static "assets/css/jquery-ui.custom.min.css" %}" />
+		<link rel="stylesheet" href="{% static "assets/css/chosen.css" %}" />
+		<link rel="stylesheet" href="{% static "assets/css/datepicker.css" %}" />
+		<link rel="stylesheet" href="{% static "assets/css/bootstrap-timepicker.css" %}" />
+		<link rel="stylesheet" href="{% static "assets/css/daterangepicker.css" %}" />
+		<link rel="stylesheet" href="{% static "assets/css/bootstrap-datetimepicker.css" %}" />
+		<link rel="stylesheet" href="{% static "assets/css/colorpicker.css" %}" />
+
+		<!-- text fonts -->
+		<link rel="stylesheet" href="{% static "assets/css/ace-fonts.css" %}" />
+
+		<!-- ace styles -->
+		<link rel="stylesheet" href="{% static "assets/css/ace.min.css" %}" id="main-ace-style" />
+
+		<!--[if lte IE 9]>
+			<link rel="stylesheet" href="{% static "assets/css/ace-part2.min.css" %}" />
+		<![endif]-->
+		<link rel="stylesheet" href="{% static "assets/css/ace-skins.min.css" %}" />
+		<link rel="stylesheet" href="{% static "assets/css/ace-rtl.min.css" %}" />
+
+		<!--[if lte IE 9]>
+		  <link rel="stylesheet" href="{% static "assets/css/ace-ie.min.css" %}" />
+		<![endif]-->
+
+		<!-- inline styles related to this page -->
+
+		<!-- ace settings handler -->
+		<script src="{% static "assets/js/ace-extra.min.js" %}"></script>
+
+		<!-- HTML5shiv and Respond.js for IE8 to support HTML5 elements and media queries -->
+
+		<!--[if lte IE 8]>
+		<script src="{% static "assets/js/html5shiv.min.js" %}"></script>
+		<script src="{% static "assets/js/respond.min.js" %}"></script>
+		<![endif]-->
+	</head>
+
+	<body class="no-skin">
+		<!-- #section:basics/navbar.layout -->
+		<div id="navbar" class="navbar navbar-default    navbar-collapse       h-navbar">
+			<script type="text/javascript">
+				try{ace.settings.check('navbar' , 'fixed')}catch(e){}
+			</script>
+
+			<div class="navbar-container" id="navbar-container">
+				<div class="navbar-header pull-left">
+					<!-- #section:basics/navbar.layout.brand -->
+					<a href="#" class="navbar-brand">
+						<small>
+							<i class="fa fa-leaf"></i>
+							EStore
+						</small>
+					</a>
+
+
+					<button class="pull-right navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".sidebar">
+						<span class="sr-only">Toggle sidebar</span>
+
+						<span class="icon-bar"></span>
+
+						<span class="icon-bar"></span>
+
+						<span class="icon-bar"></span>
+					</button>
+
+					<!-- /section:basics/navbar.toggle -->
+				</div>
+
+				<!-- #section:basics/navbar.dropdown -->
+				<div class="navbar-buttons navbar-header pull-right  collapse navbar-collapse" role="navigation">
+				</div>
+
+				<!-- /section:basics/navbar.dropdown -->
+			</div><!-- /.navbar-container -->
+		</div>
+
+		<!-- /section:basics/navbar.layout -->
+		<div class="main-container" id="main-container">
+			<script type="text/javascript">
+				try{ace.settings.check('main-container' , 'fixed')}catch(e){}
+			</script>
+
+			<!-- #section:basics/sidebar.horizontal -->
+			<div id="sidebar" class="sidebar h-sidebar navbar-collapse collapse">
+				<ul class="nav nav-list">
+					<li class="hover">
+						<a href="/">
+							<i class="menu-icon fa fa-tachometer"></i>
+							<span class="menu-text"> Dashboard </span>
+						</a>
+
+						<b class="arrow"></b>
+					</li>
+                    <li class="hover">
+						<a href="#" class="dropdown-toggle">
+							<i class="menu-icon fa fa-cubes"></i>
+							<span class="menu-text"> Products </span>
+
+							<b class="arrow fa fa-angle-down"></b>
+						</a>
+
+						<b class="arrow"></b>
+                        <ul class="submenu">
+                            <li class="hover">
+								<a href="/products/">
+									<i class="menu-icon fa fa-caret-right"></i>
+									All Products
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+                            <li class="hover">
+								<a href="/recieve_shipment/">
+									<i class="menu-icon fa fa-caret-right"></i>
+									New Product Shipment
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+                            <li class="hover">
+								<a href="/new_product/">
+									<i class="menu-icon fa fa-caret-right"></i>
+									New Product
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+						</ul>
+					</li>
+                    <li class="active open hover">
+						<a href="#" class="dropdown-toggle">
+							<i class="menu-icon fa fa-file-text"></i>
+							<span class="menu-text"> Invoices </span>
+
+							<b class="arrow fa fa-angle-down"></b>
+						</a>
+
+						<b class="arrow"></b>
+                        <ul class="submenu">
+                            <li class="hover">
+								<a href="/invoices/">
+									<i class="menu-icon fa fa-caret-right"></i>
+									All Invoices
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+                            <li class="hover">
+								<a href="/new_invoice/">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Create an Invoice
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+						</ul>
+					</li>
+                    <li class="hover">
+						<a href="#" class="dropdown-toggle">
+							<i class="menu-icon fa fa-user"></i>
+							<span class="menu-text"> Customers </span>
+
+							<b class="arrow fa fa-angle-down"></b>
+						</a>
+
+						<b class="arrow"></b>
+                        <ul class="submenu">
+                            <li class="hover">
+								<a href="/customers/">
+									<i class="menu-icon fa fa-caret-right"></i>
+									All Customers
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+                            <li class="hover">
+								<a href="/new_customer/">
+									<i class="menu-icon fa fa-caret-right"></i>
+									New Customer
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+						</ul>
+					</li>
+				</ul><!-- /.nav-list -->
+			</div>
+
+			<!-- /section:basics/sidebar.horizontal -->
+			<div class="main-content">
+				<div class="page-content">
+					<div class="page-content-area">
+						<div class="page-header">
+							<h1>
+								Add Product to Invoice #{{ i.id }}
+							</h1>
+						</div><!-- /.page-header -->
+
+						<div class="row">
+							<div class="col-xs-12">
+								<!-- PAGE CONTENT BEGINS -->
+								<div class="center">
+                                    <div class="col-xs-12 col-sm-6">
+                                        <div class="widget-box">
+                                            <div class="widget-body">
+                                                <div class="widget-main">
+                                                    <form class="form" method="post" action="#">
+                                                    {% csrf_token %}
+                                                        <div class="form-group">
+                                                            <label class="pull-left">Select Product</label>
+                                                            <select class="chosen-select" id="product" name="product">
+                                                                <option value=""></option>
+                                                                {% for p in stock %}
+                                                                <option value="{{ p.product.id }}">{{ p.product.name }} --- {{ p.quantity }}</option>
+                                                                {% endfor %}
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="Qspinner1">Quantity</label>
+                                                            <input type="text" class="input-mini" id="Qspinner1" name="quantity" value="1" />
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <button class="btn btn-success" type="submit"><i class="fa fa-lg fa-plus"></i> Add</button>
+                                                        </div>
+									                </form>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+								</div>
+
+								<!-- PAGE CONTENT ENDS -->
+							</div><!-- /.col -->
+						</div><!-- /.row -->
+					</div><!-- /.page-content-area -->
+				</div><!-- /.page-content -->
+			</div><!-- /.main-content -->
+
+			<div class="footer">
+				<div class="footer-inner">
+					<!-- #section:basics/footer -->
+					<div class="footer-content">
+						<span class="bigger-120">
+							<span class="blue bolder">EStore</span>
+							Application
+						</span>
+					</div>
+
+					<!-- /section:basics/footer -->
+				</div>
+			</div>
+
+			<a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+				<i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
+			</a>
+		</div><!-- /.main-container -->
+
+		<!-- basic scripts -->
+        <script src="{% static "assets/js/jquery.min.js"%}"></script>
+		<script type="text/javascript">
+			if('ontouchstart' in document.documentElement) document.write("<script src='{% static "assets/js/jquery.mobile.custom.min." %}'>"+"<"+"/script>");
+		</script>
+		<script src="{% static "assets/js/bootstrap.min.js" %}"></script>
+
+		<!-- page specific plugin scripts -->
+        <script src="{% static "assets/js/chosen.jquery.min.js" %}"></script>
+		<script src="{% static "assets/js/fuelux/fuelux.spinner.min.js" %}"></script>
+
+		<!-- ace scripts -->
+		<script src="{% static "assets/js/ace-elements.min.js" %}"></script>
+		<script src="{% static "assets/js/ace.min.js" %}"></script>
+
+		<!-- inline scripts related to this page -->
+		<script type="text/javascript">
+			jQuery(function($) {
+                $('#Qspinner1').ace_spinner({
+                    min: 0,
+                    max: 100,
+                    step: 1,
+
+                    icon_up: 'fa fa-plus',
+                    icon_down: 'fa fa-minus',
+                    btn_up_class: 'btn-success',
+                    btn_down_class: 'btn-danger',
+
+                    on_sides: true
+                });
+                $('.chosen-select').chosen();
+
+                $(window).on('resize.chosen', function() {
+                //get its parent width
+                var w = $('.chosen-select').parent().width();
+                $('.chosen-select').siblings('.chosen-container').css({'width':w});
+                }).triggerHandler('resize.chosen');
+			});
+		</script>
+
+		<script src="{% static "assets/js/ace/elements.onpage-help.js" %}"></script>
+		<script src="{% static "assets/js/ace/ace.onpage-help.js" %}"></script>
+		<script src="{% static "docs/assets/js/rainbow.js" %}"></script>
+		<script src="{% static "docs/assets/js/language/generic.js" %}"></script>
+		<script src="{% static "docs/assets/js/language/html.js" %}"></script>
+		<script src="{% static "docs/assets/js/language/css.js" %}"></script>
+		<script src="{% static "docs/assets/js/language/javascript.js" %}"></script>
+	</body>
+</html>
