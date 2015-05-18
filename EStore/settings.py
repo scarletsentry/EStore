@@ -62,7 +62,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'o_bayraktar',
         #'HOST': 'dijkstra.ug.bcc.bilkent.edu.tr',
-        'HOST': 'cuthalion-dev.com'
+        'HOST': 'cuthalion-dev.com',
         'PORT': '3306',
         #'USER': 'o_bayraktar',
         #'PASSWORD': '36xjr5e9',
