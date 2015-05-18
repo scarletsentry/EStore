@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="74cd1062-c3f8-4960-b41f-5ad372112577" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EStore/wsgi.py" afterPath="$PROJECT_DIR$/EStore/wsgi.py" />
     </list>
     <ignored path="EStore.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -573,7 +572,11 @@
       <created>1431965978622</created>
       <updated>1431965978622</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="waterdeep db fix">
+      <created>1431968503158</created>
+      <updated>1431968503158</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
