@@ -67,7 +67,7 @@ DATABASES = {
         #'USER': 'o_bayraktar',
         #'PASSWORD': '36xjr5e9',
         'USER': 'fayt',
-        'PASSWORD': 'asd1232qwe',
+        'PASSWORD': 'asd123qwe',
     }
 }
 
